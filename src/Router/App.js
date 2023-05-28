@@ -1,10 +1,8 @@
 import React, { useContext } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import {
   Routes,
   Route,
-  Outlet,
   Link,
   useParams,
   useSearchParams,
@@ -73,7 +71,6 @@ const Product = () => {
 
   const color = searchParams.get("color") || item.colors[0];
   const door = searchParams.get("door") || item.doors[0];
-  console.log(allItems);
 
   const toogleAdd = () => {
     const myItem = {
@@ -101,6 +98,7 @@ const Product = () => {
         return <Link to={`?color=${color}&door=${door}`}>{door} </Link>;
       })}
       <button onClick={() => toogleAdd()}>Add To Cart</button>
+      <Link to={'/cart'}>Cart</Link>
     </div>
   );
 };

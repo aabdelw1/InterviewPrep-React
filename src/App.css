@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button-animation {
+  display: block;
+
+  animation-name: moveInRight;
+  animation-duration: 3s;
+}
+
+
+.button-animation2 {
+  display: block;
+ /*  Animation decalaration   */
+  animation-name: moveInleft;
+  animation-duration: 3s;
+}
+
+@keyframes moveInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+
+  80% {
+      transform: translateX(-10px);
+  }
+  
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInleft {
+  0% {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+
+  80% {
+      transform: translateX(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}

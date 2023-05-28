@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+* grid of item cards on home
+* cart uses local storage
+* cart has empty state ui
+* cart condenses items into quantity's
+* button adds item by quantity 1 or more
+* product page ui
+* product page quantity selector +/-
+* Global navbar for cart
+
+https://kentcdodds.com/blog/how-to-use-react-context-effectively
+- useMemo()
+- useReducer(), having actions for add to cart
+- Carousel
