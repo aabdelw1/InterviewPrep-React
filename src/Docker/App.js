@@ -39,7 +39,7 @@ const Blog = () => {
     fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
       .then((response) => response.json())
       .then((json) => setBlog(json));
-  }, []);
+  }, [id]);
 
   console.log(blog)
 
